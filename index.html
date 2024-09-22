@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Sincere Apology</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="apology-message">
+            <h1>I'm Truly Sorry</h1>
+            <p class="personal-message">Cris... Sorry naba wala na tuyo... Not enough akong reason peru dli na nku utrohon.. Sorry ug slamat!  b</p>
+            <p class="emotional-line">Peace nata ha friendship baya ta awh</p>
+        </div>
+        <button class="accept-apology" onclick="acceptApology()">I Forgive You</button>
+        <button class="not-ready" onclick="notReady()">I'm Not Ready</button>
+    </div>
+
+    <style>
+        /* Reset some basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic page styling */
+body {
+    font-family: 'Georgia', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Main container */
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    width: 400px;
+    animation: fadeIn 1s ease;
+}
+
+/* Apology message */
+.apology-message h1 {
+    color: #d35400;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.apology-message .personal-message {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.apology-message .emotional-line {
+    color: #b03a2e;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+/* Button styles */
+button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 10px;
+}
+
+.accept-apology {
+    background-color: #27ae60;
+    color: #fff;
+}
+
+.accept-apology:hover {
+    background-color: #229954;
+}
+
+.not-ready {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.not-ready:hover {
+    background-color: #c0392b;
+}
+
+/* Button click effect */
+button:active {
+    transform: scale(0.95);
+}
+
+/* Container fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+    </style>
+
+    <script>
+        function acceptApology() {
+            alert("Thank you so much! I truly appreciate your forgiveness.");
+            window.location.href = "index.html";  // Redirect to your desired page
+        }
+
+        function notReady() {
+            alert("I understand, take your time. I'm here whenever you're ready.");
+        }
+    </script>
+</body>
+</html>
